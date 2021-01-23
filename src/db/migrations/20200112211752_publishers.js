@@ -1,4 +1,3 @@
-
 exports.up = knex => knex.schema.createTable('publishers', table => {
   table
     .uuid('id')
