@@ -84,14 +84,14 @@ module.exports = gql`
     age: Int
     email: String
     numBooksPublished: Int
-    addressId: ID
+    address: AddAddress
   }
 
   input AddPublisher {
     company: String!
     phoneNumber: String
     numBooksPublished: Int
-    addressId: ID
+    address: AddAddress
   }
 
   input AddBook {
@@ -100,8 +100,8 @@ module.exports = gql`
     numPages: Int
     datePublished: String
     bestseller: Boolean
-    authorId: ID!
-    publisherId: ID!
+    author: AddAuthor!
+    publisher: AddPublisher!
   }
 
 `
